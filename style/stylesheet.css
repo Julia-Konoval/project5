@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(46, 52, 59);
+}
+#navbar {
+  font-family: "Anton", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #d66304;
+}
+#navbar li {
+  list-style: none;
+}
+#profile-link {
+  text-decoration: none;
+  color: aliceblue;
+}
+#welcome-section {
+  color: aliceblue;
+  height: 700px;
+}
+#welcome-section {
+  left: 0;
+  line-height: 30px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+#welcome-section h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #d66304,
+    -1px -1px 0 #d66304;
+}
+#welcome-section h2 {
+  font-family: "Anton", sans-serif;
+  font-family: "Indie Flower", cursive;
+  font-size: 30px;
+  color: #d66304;
+}
