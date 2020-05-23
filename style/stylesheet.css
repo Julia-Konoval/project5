@@ -14,15 +14,19 @@ body {
   flex-direction: column;
 }
 #navbar {
+  /*Removed*/
+  /*  width: 100%; */
+  /*  flex-direction: row; */
   font-family: "Anton", sans-serif;
-  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   font-size: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #d66304;
+  /*Added*/
+  height: 10vh;
+  min-height: 70px;
 }
 #navbar li {
   list-style: none;
@@ -36,14 +40,22 @@ body {
   height: 700px;
 }
 #welcome-section {
-  height: 1700px;
-  left: 0;
+  /*Removed*/
+  /* height: 1700px; */
+  /* left: 0; */
+  /* margin-top: -100px; */
+  /* position: absolute; */
+  /* width: 100%; */
   line-height: 30px;
-  margin-top: -100px;
-  position: absolute;
   text-align: center;
-  top: 50%;
-  width: 100%;
+
+  /*Added*/
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
 }
 #welcome-section h1 {
   font-family: "Anton", sans-serif;
@@ -59,5 +71,36 @@ body {
 }
 #projects {
   height: 700px;
+  background-color: #e4f1fe;
   /* background-color: aquamarine; */
+}
+#projects h2 {
+  color: #d66304;
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+.viewCollasheColumn1Content {
+  width: 1775px;
+  height: 100%;
+  -ms-transform: scale(0.25);
+  -moz-transform: scale(0.25);
+  -o-transform: scale(0.25);
+  -webkit-transform: scale(0.25);
+  transform: scale(0.25);
+  -ms-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.project-image {
+  display: grid;
+  /* object-fit: cover; */
+  height: 200vh;
+}
+#wrapper {
+  grid-template-columns: 100px;
+  grid-auto-rows: 100px;
+  grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start];
 }
