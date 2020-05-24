@@ -40,12 +40,6 @@ body {
   height: 700px;
 }
 #welcome-section {
-  /*Removed*/
-  /* height: 1700px; */
-  /* left: 0; */
-  /* margin-top: -100px; */
-  /* position: absolute; */
-  /* width: 100%; */
   line-height: 30px;
   text-align: center;
 
@@ -72,7 +66,6 @@ body {
 #projects {
   height: 700px;
   background-color: #e4f1fe;
-  /* background-color: aquamarine; */
 }
 #projects h2 {
   color: #d66304;
@@ -80,27 +73,28 @@ body {
   font-size: 50px;
   text-align: center;
 }
-.viewCollasheColumn1Content {
-  width: 1775px;
-  height: 100%;
-  -ms-transform: scale(0.25);
-  -moz-transform: scale(0.25);
-  -o-transform: scale(0.25);
-  -webkit-transform: scale(0.25);
-  transform: scale(0.25);
-  -ms-transform-origin: 0 0;
-  -moz-transform-origin: 0 0;
-  -o-transform-origin: 0 0;
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-}
-.project-image {
-  display: grid;
-  /* object-fit: cover; */
-  height: 200vh;
-}
+/* .project-image {
+ 
+  /* height: 50vh; 
+  border: 3px black solid;
+} */
 #wrapper {
-  grid-template-columns: 100px;
-  grid-auto-rows: 100px;
-  grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start];
+  width: 90%;
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: 200px;
+}
+#image1 {
+  width: 24vh;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+#image2 {
+  width: 24vh;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
