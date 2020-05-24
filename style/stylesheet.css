@@ -89,13 +89,22 @@ body {
 }
 #image1 {
   width: 54vh;
+  height: 33vh;
   grid-area: a;
   align-self: center;
   border: 3px black solid;
 }
 #image2 {
   width: 54vh;
+  height: 33vh;
   grid-area: b;
+  align-self: center;
+  border: 3px black solid;
+}
+#image3 {
+  width: 54vh;
+  height: 33vh;
+  grid-area: c;
   align-self: center;
   border: 3px black solid;
 }
@@ -103,5 +112,8 @@ body {
   box-shadow: 10px 5px 5px black;
 }
 #image1:hover {
+  box-shadow: 10px 5px 5px black;
+}
+#image3:hover {
   box-shadow: 10px 5px 5px black;
 }
