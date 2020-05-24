@@ -73,28 +73,35 @@ body {
   font-size: 50px;
   text-align: center;
 }
-/* .project-image {
- 
-  /* height: 50vh; 
-  border: 3px black solid;
-} */
+.project-image {
+  margin-top: 20vh;
+}
 #wrapper {
   width: 90%;
   display: grid;
-  grid-template-columns: 200px;
-  grid-template-rows: 200px;
+  grid-gap: 10px;
+  grid-auto-rows: 200px;
+  grid-template-areas: "a b c";
+  align-items: center;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
 }
 #image1 {
-  width: 24vh;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 4;
+  width: 54vh;
+  grid-area: a;
+  align-self: center;
+  border: 3px black solid;
 }
 #image2 {
-  width: 24vh;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 4;
+  width: 54vh;
+  grid-area: b;
+  align-self: center;
+  border: 3px black solid;
+}
+#image2:hover {
+  box-shadow: 10px 5px 5px black;
+}
+#image1:hover {
+  box-shadow: 10px 5px 5px black;
 }
